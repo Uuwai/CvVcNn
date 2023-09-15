@@ -13,7 +13,7 @@ namespace CvVcNn
     public partial class Form1 : Form
     {
         Random random = new Random();
-        
+
         public Form1()
         {
             InitializeComponent();
@@ -68,11 +68,11 @@ namespace CvVcNn
         //static Random rs = new Random();
         static string[] strings = { ";=A=;", ";=a=;", ";=C=;", ";=c=;", ";=V=;", ";=v=;", ";=N=;", ";=n=;", };
         static string A = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        static string a = "abcdefghijklmnopqrstuvwxyz";  // Separate lowercase character set
+        static string a = "abcdefghijklmnopqrstuvwxyz";
         static string C = "BCDFGHJKLMNPQRSTVWXYZ";
-        static string c = "bcdfghjklmnpqrstvwxyz";  // Separate lowercase character set
+        static string c = "bcdfghjklmnpqrstvwxyz";
         static string V = "AEIOU";
-        static string v = "aeiou";  // Separate lowercase character set
+        static string v = "aeiou";
         static string N = "1234567890";
 
         static string updatetext(string inp)
@@ -86,7 +86,7 @@ namespace CvVcNn
             var NR = N.ToCharArray();
             for (int i = 0; i < strings.Length; i++)
             {
-                Random rs = new Random(seed); // Create a new Random object for each replacement
+                Random rs = new Random(seed);
                 string pattern = strings[i];
 
                 switch (i)
@@ -120,5 +120,49 @@ namespace CvVcNn
             return inp;
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(resultBox1.Text);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            inputBox1.Paste(strings[0]);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            inputBox1.Paste(strings[1]);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            inputBox1.Paste(strings[2]);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            inputBox1.Paste(strings[3]);
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            inputBox1.Paste(strings[4]);
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            inputBox1.Paste(strings[5]);
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            inputBox1.Paste(strings[6]);
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            inputBox1.Paste(strings[7]);
+        }
     }
 }
