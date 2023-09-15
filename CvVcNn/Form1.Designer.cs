@@ -69,7 +69,6 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -82,6 +81,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
             this.tabPage1.Controls.Add(this.tableLayoutPanel3);
             this.tabPage1.Controls.Add(this.button3);
             this.tabPage1.Controls.Add(this.groupBox1);
@@ -90,13 +90,12 @@
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.seederbutton);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(792, 421);
+            this.tabPage1.Size = new System.Drawing.Size(792, 424);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "CvVcNn -> BaEc01";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel3
             // 
@@ -222,6 +221,7 @@
             // 
             // button3
             // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button3.Location = new System.Drawing.Point(695, 188);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
@@ -232,6 +232,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.seedBox);
             this.groupBox1.Location = new System.Drawing.Point(395, 221);
             this.groupBox1.Name = "groupBox1";
@@ -251,6 +252,8 @@
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -288,6 +291,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(11, 299);
             this.label3.Name = "label3";
@@ -297,8 +301,9 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(392, 9);
+            this.label2.Location = new System.Drawing.Point(731, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(39, 13);
             this.label2.TabIndex = 4;
@@ -315,6 +320,7 @@
             // 
             // seederbutton
             // 
+            this.seederbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.seederbutton.Location = new System.Drawing.Point(695, 234);
             this.seederbutton.Name = "seederbutton";
             this.seederbutton.Size = new System.Drawing.Size(75, 23);
@@ -325,21 +331,23 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.BackColor = System.Drawing.SystemColors.Control;
             this.tabPage3.Controls.Add(this.tableLayoutPanel2);
             this.tabPage3.Controls.Add(this.label4);
             this.tabPage3.Controls.Add(this.label5);
             this.tabPage3.Controls.Add(this.label6);
             this.tabPage3.Controls.Add(this.button2);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(792, 421);
+            this.tabPage3.Size = new System.Drawing.Size(792, 424);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = " BaEc01 -> CvVcNn";
-            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel2
             // 
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -372,9 +380,11 @@
             this.inputBox2.Name = "inputBox2";
             this.inputBox2.Size = new System.Drawing.Size(375, 157);
             this.inputBox2.TabIndex = 0;
+            this.inputBox2.TextChanged += new System.EventHandler(this.inputBox2_TextChanged);
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(11, 299);
             this.label4.Name = "label4";
@@ -384,8 +394,9 @@
             // 
             // label5
             // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(392, 9);
+            this.label5.Location = new System.Drawing.Point(731, 9);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(39, 13);
             this.label5.TabIndex = 4;
@@ -402,12 +413,14 @@
             // 
             // button2
             // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.Location = new System.Drawing.Point(695, 188);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 2;
             this.button2.Text = "Copy";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 

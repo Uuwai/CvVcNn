@@ -164,5 +164,21 @@ namespace CvVcNn
         {
             inputBox1.Paste(strings[7]);
         }
+
+        private void inputBox2_TextChanged(object sender, EventArgs e)
+        {
+            string fm = inputBox2.Text;
+            fm = Regex.Replace(fm, @"[BCDFGHJKLMNPQRSTVWXYZ]", ";=C=;");
+            fm = Regex.Replace(fm, @"[bcdfghjklmnpqrstvwxyz]", ";=c=;");
+            fm = Regex.Replace(fm, @"[AEIOU]", ";=V=;");
+            fm = Regex.Replace(fm, @"[aeiou]", ";=v=;");
+            fm = Regex.Replace(fm, @"[1234567890]", ";=N=;");
+            resultBox2.Text = fm;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(resultBox2.Text);
+        }
     }
 }
